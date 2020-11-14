@@ -8,19 +8,24 @@
 body {background-color: #FECBD7;}
 h1   {color: blue;text-align: center;}
 p    {color: red;text-align: center;}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 </style>
+
 </head>
 <body>
-<h1><script type="text/javascript">
-var total_images = 3;
-var random_number = Math.floor((Math.random()*total_images));
-var random_img = new Array();
-random_img[0] = '<a href="index.html"><img src="header/p1.png"></a>';
-random_img[1] = '<a href="index.html"><img src="header/p2.png"></a>';
-random_img[2] = '<a href="index.html"><img src="header/p3.png"></a>';
-document.write(random_img[random_number]);
-</script></h1>
+<img src="header/p1.png" id="chImg" class="center">
 <p>Welcome to the <em>twisted</em> world of<strong> funny man</strong></p>
-<p><a href="page2.html">Secret World</a></p>
+<p><a href="./page2.html">Secret World</a></p>
 </body>
+<script type="text/javascript">
+var limiter = 3, img=document.getElementById("chImg");
+img.addEventListener('click', function(){
+    img.src=`header/p${Math.floor((Math.random()*limiter))+1}.png`;
+});
+</script>
 </html>
