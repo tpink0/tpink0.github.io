@@ -1,9 +1,8 @@
 <!DOCTYPE html>
-
-<html>
-<head>
+<!-- saved from url=(0018)http://tpink0.com/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>tpink0.com</title>
-    <link rel="icon" type="image/png" href="img\icon.png">
+    <link rel="icon" type="image/png" href="http://tpink0.com/img/icon.png">
     <style>
 body {background-color: #FECBD7;}
 h1   {color: blue;text-align: center;}
@@ -25,15 +24,18 @@ p    {color: red;text-align: center;}
 
 </head>
 <body>
-<img src="img/header/p1.png" id="chImg" class="center">
+<img src="./tpink0.com_files/p1.png" id="chImg" class="center">
 <p>Welcome to the <em>twisted</em> world of<strong> funny man</strong></p>
-<p><a href="./page2.html">Secret World</a></p>
-<p><a href="./ohhellnah.html">Oh Hell Nah</a></p>
-</body>
+<p><a href="http://tpink0.com/page2.html">Secret World</a></p>
+<p><a href="http://tpink0.com/ohhellnah.html">Oh Hell Nah</a></p>
+
 <script type="text/javascript">
 var limiter = 11, img=document.getElementById("chImg");
-img.addEventListener('click', function(){
+function changer(){
     img.src=`img/header/p${Math.floor((Math.random()*limiter))+1}.png`;
-});
+}
+img.addEventListener('click', changer());
+    window.onload =changer();
 </script>
-</html>
+
+</body></html>
