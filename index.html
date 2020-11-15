@@ -3,7 +3,7 @@
 <html>
 <head>
     <title>tpink0.com</title>
-    <link rel="icon" type="image/png" href="icon.png">
+    <link rel="icon" type="image/png" href="img\icon.png">
     <style>
 body {background-color: #FECBD7;}
 h1   {color: blue;text-align: center;}
@@ -25,7 +25,7 @@ p    {color: red;text-align: center;}
 
 </head>
 <body>
-<img src="header/p1.png" id="chImg" class="center">
+<img src="img/header/p1.png" id="chImg" class="center">
 <p>Welcome to the <em>twisted</em> world of<strong> funny man</strong></p>
 <p><a href="./page2.html">Secret World</a></p>
 <p><a href="./ohhellnah.html">Oh Hell Nah</a></p>
@@ -33,7 +33,7 @@ p    {color: red;text-align: center;}
 <script type="text/javascript">
 var limiter = 6, img=document.getElementById("chImg");
 img.addEventListener('click', function(){
-    img.src=`header/p${Math.floor((Math.random()*limiter))+1}.png`;
+    img.src=`img/header/p${Math.floor((Math.random()*limiter))+1}.png`;
 });
 </script>
 </html>
