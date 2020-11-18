@@ -1,0 +1,78 @@
+<html>
+    <style>
+body {background-color: #FECBD7;}
+h1 {text-align: center;}
+p {text-align: center;}
+div {text-align: center;}
+ img {image-rendering: optimizeSpeed;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: pixelated;
+    image-rendering: optimize-contrast; 
+    -ms-interpolation-mode: nearest-neighbor;
+ }
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 35%;}
+* {box-sizing: border-box;}
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+</style>
+<head>
+    <title>tpink0.com</title>
+    <link rel="icon" type="image/png" href="img\icon.png">
+</head>
+<body>
+<a href="http://tpink0.com"><img src="./tpink0.com_files/p1.png" id="chImg" class="center"></a>
+<h1>Here's a couple of the projects I've finished in the past</h1>
+<div class="row">
+  <div class="column">
+    <img src="img/work/lighthouseposter.png" alt="A mock poster for the movie The Lighthouse" style="width:85%">
+    <p>School project Sept. 2020</p>
+  </div>
+  <div class="column">
+    <img src="img/work/VOL2.png" alt="Oh Yeah AWeomsomeness Epi ch ere" style="width:85%">
+    <p>Personal project Sept. 2020</p>
+  </div>
+  <div class="column">
+    <img src="img/work/poly.png" alt="A custom Polygondwanaland back cover" style="width:85%">
+    <p>Personal project June 2020</p>
+  </div>
+</div>
+<div class="row">
+  <div class="column">
+    <img src="img/work/9prlsplit.png" alt="A circular patch with a set of 9 pearly fangs in the middle, with the text surrounding it reading 'A TRUE SIGN THAT YOU'RE DEFORMED'" style="width:85%">
+    <p>Personal project May 2020</p>
+  </div>
+  <div class="column">
+    <img src="img/work/yearbookgif.gif" alt="A spinning render of the Baxter Academy 2020 Yearbook, designed to look like the iconic ThinkPad computers issued by the school." style="width:65%">
+    <p>Baxter Academy yearbook cover 2020</p>
+  </div>
+  <div class="column">
+    <img src="img/work/poster20.png" alt="A travel poster featuring Team Fortress 2's ctf_2fort, with the text 'YOU'RE ON YOUR WAY TO: TEUFORT NEW MEXICO' with quotations at the bottom reading 'America's Gravel Basket' in a swoopy font." style="width:65%">
+    <p>School project 2018</p>
+  </div>
+</div>
+<script type="text/javascript">
+var limiter = 11, img=document.getElementById("chImg");
+function changer(){
+    img.src=`img/header/p${Math.floor((Math.random()*limiter))+1}.png`;
+}
+img.addEventListener('click', changer());
+    window.onload =changer();
+</script>
+</body>
+</html>
