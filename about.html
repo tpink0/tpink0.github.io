@@ -1,0 +1,45 @@
+<html>
+    <style>
+body {background-color: #FECBD7;}
+h1 {text-align: center;}
+p {color:#ff7496;text-align: center;}
+div {text-align: center;}
+ img {image-rendering: optimizeSpeed;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: pixelated;
+    image-rendering: optimize-contrast; 
+    -ms-interpolation-mode: nearest-neighbor;
+ }
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 35%;}
+  .lileft {
+  display: block;
+  margin-left: 35%;
+  width: 15%;}
+</style>
+<head>
+    <title>tpink0.com</title>
+    <link rel="icon" type="image/png" href="img\icon.png">
+</head>
+<body>
+<a href="http://tpink0.com"><img src="./tpink0.com_files/p1.png" id="chImg" class="center"></a>
+<p style="font-size:60px;"></p>
+
+<p><img src="img/u.png" alt="artist's rendition" style="vertical-align:middle;margin:0px 50px;width:15%">
+<strong>Thomas Pinkham</strong> is studying Graphic Design at Lesley University and is currently living in Scarborough, ME.</p>
+
+<script type="text/javascript">
+var limiter = 15, img=document.getElementById("chImg");
+function changer(){
+    img.src=`img/header/p${Math.floor((Math.random()*limiter))+1}.png`;
+}
+img.addEventListener('click', changer());
+    window.onload =changer();
+</script>
+</body>
+</html>
