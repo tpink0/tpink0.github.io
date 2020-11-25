@@ -1,8 +1,9 @@
 <html>
     <style>
 body {background-color: #FECBD7;}
-h1 {text-align: center;}
-p {color:#ff7496;text-align: center;}
+h1 {text-align: center;font-family: "Tahoma"}
+p {color:#4D212B;text-align: center;font-family: "Tahoma"}
+pre {color:#4D212B;text-align: center; font-family: "Tahoma"}
 div {text-align: center;}
  img {image-rendering: optimizeSpeed;
     image-rendering: -moz-crisp-edges;
@@ -18,9 +19,13 @@ div {text-align: center;}
   margin-right: auto;
   width: 35%;}
   .lileft {
-  display: block;
-  margin-left: 35%;
-  width: 15%;}
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width:50%;
+  border: 3px #FECBD7; 
+  }
 </style>
 <head>
     <title>tpink0.com</title>
@@ -28,11 +33,14 @@ div {text-align: center;}
 </head>
 <body>
 <a href="http://tpink0.com"><img src="./tpink0.com_files/p1.png" id="chImg" class="center"></a>
-<p style="font-size:60px;"></p>
+<p style="font-size:100px;"></p>
 
-<p><img src="img/u.png" alt="artist's rendition" style="vertical-align:middle;margin:0px 50px;width:15%">
-<strong>Thomas Pinkham</strong> is studying Graphic Design at Lesley University and is currently living in Scarborough, ME.</p>
+<div class="lileft">
+<img src="img/u.png" alt="artist's rendition" style="vertical-align:middle;margin:0px 50px;width:15%">
+<pre><strong>Thomas Pinkham</strong> is studying Graphic Design at Lesley University and is currently residing in Scarborough, ME.
 
+<i>"I'm always looking for something fun and interesting to do. This week it was making a website!"</i></pre>
+</div>
 <script type="text/javascript">
 var limiter = 15, img=document.getElementById("chImg");
 function changer(){
