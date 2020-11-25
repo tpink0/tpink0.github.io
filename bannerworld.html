@@ -1,0 +1,155 @@
+<html>
+ <style>
+body {background-color: #FECBD7;}
+h1 {color:#4D212B;text-align: center;font-family: "Tahoma"}
+p {color:#4D212B;text-align: center;font-family: "Tahoma"}
+pre {color:#4D212B;text-align: center; font-family: "Tahoma"}
+div {text-align: center;}
+ img {image-rendering: optimizeSpeed;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: pixelated;
+    image-rendering: optimize-contrast; 
+    -ms-interpolation-mode: nearest-neighbor;
+ }
+table, th, td {
+  border: 1px solid #4D212B;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 15px;
+  text-align: center;
+  color:#4D212B;
+}
+.edder {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 35%;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+</style>
+<head>
+     <title>tpink0.com</title>
+     <link rel="icon" type="image/png" href="img\icon.png">
+</head>
+<body>
+<a href="http://tpink0.com"><img src="./tpink0.com_files/p1.png" id="chImg" class="edder"></a>
+<p style="font-size:40px;"></p>
+<h1>Welcome to Header World!</h1>
+<p>Here's all the headers that tpink0.com has to offer!</p>
+<table class="center">
+  <tr>
+    <th>#</th>
+    <th>Banner</th>
+    <th>Creator</th> 
+    <th>Lore</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td><img src=img/header/p1.png></td>
+    <td>Me</td>
+    <td>Originally created a full week before the site's launch<br><strong>11/6/20</strong></td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td><img src=img/header/p2.png></td>
+    <td>Me</td>
+    <td>Originally created a full week before the site's launch<br><strong>11/6/20</strong></td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td><img src=img/header/p3.png></td>
+    <td>Me</td>
+    <td>Created during testing of the banner features<br><strong>11/11/20</strong></td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td><img src=img/header/p4.png></td>
+    <td>Me</td>
+    <td>Created to see if the banner would look better with color/thicker lines<br><strong>11/14/20</strong></td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td><img src=img/header/p5.png></td>
+    <td>Me</td>
+    <td>Created to see how the script would handle differently sized banners<br><strong>11/14/20</strong></td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td><img src=img/header/p6.png></td>
+    <td>Me</td>
+    <td><strong>11/14/20</strong></td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td><img src=img/header/p7.png></td>
+    <td>Me</td>
+    <td><strong>11/15/20</strong></td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td><img src=img/header/p8.png></td>
+    <td>Me</td>
+    <td>Created to see how the banner would look at smaller sizes<br><strong>11/15/20</strong></td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td><img src=img/header/p9.png></td>
+    <td>Me</td>
+    <td><strong>11/15/20</strong></td>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td><img src=img/header/p10.png></td>
+    <td>Me</td>
+    <td><a href="http://tpink0.com/ohhellnah.html">Oh Hell Nah</a><br><strong>11/15/20</strong><sub>(3:21 AM)</sub></td>
+  </tr>
+  <tr>
+    <td>11</td>
+    <td><img src=img/header/p11.png></td>
+    <td>Me</td>
+    <td>Drawn lefthanded.<br><strong>11/15/20</strong></td>
+  </tr>
+  <tr>
+    <td>12</td>
+    <td><img src=img/header/p12.png></td>
+    <td>Me</td>
+    <td>Uses a sketch drawn on a whim.<br><strong>11/15/20</strong></td>
+  </tr>
+  <tr>
+    <td>13</td>
+    <td><img src=img/header/p13.png></td>
+    <td>Me</td>
+    <td>Adapted from a drawing<br><strong>5/19/20</strong></td>
+  </tr>
+  <tr>
+    <td>14</td>
+    <td><img src=img/header/p14.png></td>
+    <td>Me</td>
+    <td><strong>11/15/20</strong></td>
+  </tr>
+  <tr>
+    <td>15</td>
+    <td><img src=img/header/p15.png></td>
+    <td>Me</td>
+    <td>Inspired by the album art of King Gizzard's Paper Mâché Dream Balloon<br><strong>11/18/20</strong></td>
+  </tr>
+</table>
+<p>Want to submit your own? Send an 11:2 sized image, your name, and anything about it you'd like to share to <a href="mailto:header@tpink0.com">header@tpink0.com</a></p>
+<script type="text/javascript">
+var limiter = 15, img=document.getElementById("chImg");
+function changer(){
+    img.src=`img/header/p${Math.floor((Math.random()*limiter))+1}.png`;
+}
+img.addEventListener('click', changer());
+    window.onload =changer();
+</script>
+</body>
+</html>
