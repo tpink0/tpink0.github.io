@@ -1,48 +1,48 @@
 <!DOCTYPE html>
 <html>
-     <style>
-body {background-color: #FECBD7;}
-h1   {color: #ff7496;text-align: center; font-family: "Tahoma"}
-h2   {color: red;text-align: center; font-family: "Tahoma"}
-p    {color:#4D212B;text-align: center; font-family: "Tahoma"}
- img {image-rendering: optimizeSpeed;
-    image-rendering: -moz-crisp-edges;
-    image-rendering: -o-crisp-edges;
-    image-rendering: -webkit-optimize-contrast;
-    image-rendering: pixelated;
-    image-rendering: optimize-contrast; 
-    -ms-interpolation-mode: nearest-neighbor;
- }
- 
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
-</style>
- <head>
-    <title>tpink0.com</title>
-    <link rel="icon" type="image/png" href="img/icon.png">
-</head>
-<body>
-<a href="http://tpink0.com"><img src="./tpink0.com_files/p1.png" id="chImg" class="center"></a>
-<h1 style="font-size:50px;"><u><strong>Welcome to my website!</strong></u></h1>
-<p style="font-size:30px;"><a href="http://tpink0.com/portfolio.html">My Portfolio</a></p>
-<p style="font-size:20px;"><a href="http://tpink0.com/about.html">About Me</a></p>
-<p style="font-size:14px;"><a href="http://tpink0.com/bannerworld.html">Banner World</a></p>
-<p style="font-size:140px;"></p>
-<img src="img/wip.gif" alt="gilly ridin a jackhamma" class="center" style="width:12%" >
-<p style="font-size:14px;">I'm still learning HTML so this site looks a little rough right now.</p>
-<p style="font-size:12px;">Bear with me.</p>
-<p style="font-size:8px;">Site last updated 03/12/21</p>
-<script type="text/javascript">
-var limiter = 20, img=document.getElementById("chImg");
-function changer(){
-    img.src=`img/header/p${Math.floor((Math.random()*limiter))+1}.png`;
-}
-img.addEventListener('click', changer());
-    window.onload =changer();
-</script>
-
-</body></html>
+    <head>
+        <link rel="stylesheet" href="css/style.css">
+        <title>tpink0.com</title>
+        <link rel="icon" type="image/png" href="img/icon.png">
+    </head>
+    <body>
+        <nav>
+            <div class="navmenu">
+                <p>
+                    the menu
+                </p>
+                <hr class="mid">
+                <a class="b" href="http://tpink0.com"><button class="button button1">home</button></a>
+                <hr class="ri">
+                <a class="b" href="http://tpink0.com/portfolio.html"><button class="button button1">work</button></a>
+                <hr class="ri">
+                <a class="b" href="http://tpink0.com/about.html"><button class="button button1">about</button></a>
+                <hr class="ri">
+                <a class="b" href="http://tpink0.com/bannerworld.html"><button class="button button1">banner world</button></a>
+            </div>
+        </nav>
+        <div class="ottr center">
+            <a href="http://tpink0.com">
+                <img src="./tpink0.com_files/p1.png" id="chImg" class="center px">
+                <script src="css/banner.js">
+                </script>
+            </a>
+            <h1 class="top">
+                Welcome to my website!
+            </h1>
+            <p class="bump"></p>
+            <img src="img/wip.gif" alt="gilly ridin a jackhamma" class="center px" style="width:30%" >
+            <p style="font-size:14px;">I'm still learning HTML but I'm a lot better than I was when I made this a year ago.</p>
+            <p style="font-size:12px;">Still, bear with me.</p>
+            <p style="font-size:8px;"></p>
+        </div>
+    </body>
+    <footer class="foot">
+        <p class="foot">
+            Site last updated 11/19/21
+        </p>
+        <p class="foot">
+            tpink0.com awesome site dont forget
+        </p>
+    </footer>
+</html>

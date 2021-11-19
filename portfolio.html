@@ -1,79 +1,105 @@
 <html>
-    <style>
-body {background-color: #FECBD7;}
-h1 {color:#4D212B;text-align: center;font-family: "Tahoma"}
-p {color:#4D212B;text-align: center;font-family: "Tahoma"}
-div {text-align: center; font-family: "Tahoma"}
- img {image-rendering: optimizeSpeed;
-    image-rendering: -moz-crisp-edges;
-    image-rendering: -o-crisp-edges;
-    image-rendering: -webkit-optimize-contrast;
-    image-rendering: pixelated;
-    image-rendering: optimize-contrast; 
-    -ms-interpolation-mode: nearest-neighbor;
- }
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 35%;}
-* {box-sizing: border-box;}
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 5px;
-}
-/* Clearfix (clear floats) */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-</style>
-<head>
-    <title>tpink0.com</title>
+  <head>
+    <link rel="stylesheet" href="css/style.css">
+    <title>
+      work
+    </title>
     <link rel="icon" type="image/png" href="img\icon.png">
-</head>
-<body>
-<a href="http://tpink0.com"><img src="./tpink0.com_files/p1.png" id="chImg" class="center"></a>
-<h1>Here's a couple of the projects I've finished in the past</h1>
-<p>Click on any piece to get a better look at it.</p>
-<br></br>
-<div class="row">
-   <div class="column">
-    <a href="https://tpink0.com/img/work/supasoaka.png"><img src="img/work/soakermin.png" alt="A guide on how to use a Super Soaker" style="width:85%"></a>
-    <p>School project February 2021</p>
-  </div>
-  <div class="column">
-    <a href="https://tpink0.com/img/work/lighthouseposter.png"><img src="img/work/lighthouseposter.png" alt="Oh Yeah AWeomsomeness Epi ch ere" style="width:65%"></a>
-    <p>School project Sept. 2020</p>
-  </div>
-  <div class="column">
-    <a href="https://tpink0.com/img/work/poly.png"><img src="img/work/poly.png" alt="A custom Polygondwanaland back cover" style="width:85%"></a>
-    <p>Personal project June 2020</p>
-  </div>
-</div>
-<div class="row">
-  <div class="column">
-    <a href="https://tpink0.com/img/work/9prls.png"><img src="img/work/9prlsplit.png" alt="A circular patch with a set of 9 pearly fangs in the middle" style="width:85%"></a>
-    <p>Personal project May 2020</p>
-  </div>
-  <div class="column">
-    <a href="https://tpink0.com/img/work/coverfinal.png"><img src="img/work/yearbookgif.gif" alt="A spinning render of the Baxter Academy 2020 Yearbook." style="width:65%"></a>
-    <p>Baxter Academy yearbook cover 2020</p>
-  </div>
-  <div class="column">
-    <a href="https://tpink0.com/img/work/poster20.png"><img src="img/work/poster20.png" alt="A travel poster featuring Team Fortress 2's ctf_2fort" style="width:65%"></a>
-    <p>School project 2018</p>
-  </div>
-</div>
-<script type="text/javascript">
-var limiter = 20, img=document.getElementById("chImg");
-function changer(){
-    img.src=`img/header/p${Math.floor((Math.random()*limiter))+1}.png`;
-}
-img.addEventListener('click', changer());
-    window.onload =changer();
-</script>
-</body>
+  </head>
+  <body>
+    <nav>
+      <div class="navmenu">
+          <p>
+              the menu
+          </p>
+          <hr class="mid">
+          <a class="b" href="http://tpink0.com"><button class="button button1">home</button></a>
+          <hr class="ri">
+          <a class="b" href="http://tpink0.com/portfolio.html"><button class="button button1">work</button></a>
+          <hr class="ri">
+          <a class="b" href="http://tpink0.com/about.html"><button class="button button1">about</button></a>
+          <hr class="ri">
+          <a class="b" href="http://tpink0.com/bannerworld.html"><button class="button button1">banner world</button></a>
+      </div>
+  </nav>
+    <div class="ottr head">
+      <a href="http://tpink0.com">
+        <img src="./tpink0.com_files/p1.png" id="chImg" class="center px">
+      </a>
+      <script src="css/banner.js">
+      </script>
+      <div class="cntr">
+        <h1>
+          Here's a couple of the projects I've finished in the past
+        </h1>
+        <p>
+          Click on any piece to get a better look at it.
+        </p>
+      </div>
+    </div>
+    <div class="ottr">
+      <a href="http://tpink0.com/img/work/osee.png">
+        <img src="img/work/osee.png" class="piece" alt="a gig poster for Osees' show at The Sinclair on September 22nd">
+      </a>
+      <p>
+        September, 2021. Digital
+      </p>
+    </div>
+    <div class="ottr">
+      <a href="http://tpink0.com/img/work/supasoaka.png">
+        <img src="img/work/soakermin.png" class="piece" alt="a visual guide on how to use a super soaker">
+      </a>
+      <p>
+        February, 2021. Digital
+      </p>
+    </div>
+    <div class="ottr">
+      <a href="http://tpink0.com/img/work/lighthouseposter.png">
+        <img src="img/work/lighthouseposter.png" class="piece" alt="an alternate movie poster for 2018's 'The Lighthouse'">
+      </a>
+      <p>
+        September, 2020. Digital
+      </p>
+    </div>
+    <div class="ottr">
+      <a href="http://tpink0.com/img/work/poly.png">
+        <img src="img/work/poly.png" class="piece" alt="an alternate back cover for King Gizzard's 'Polygondwanaland'">
+      </a>
+      <p>
+        June, 2020. Digital
+      </p>
+    </div>
+    <div class="ottr">
+      <a href="http://tpink0.com/img/work/9prls.png">
+        <img src="img/work/9prlsplit.png" class="piece" alt="a design for a sticker or patch based on a King Gizzard song featuring a set of pearly fangs">
+      </a>
+      <p>
+        May, 2020. Digital
+      </p>
+    </div>
+    <div class="ottr">
+      <a href="http://tpink0.com/img/work/coverfinal.png">
+        <img src="img/work/yearbookgif.gif" class="piece" alt="Baxter Academy's 2020 yearbook cover">
+      </a>
+      <p>
+        2020. Digital
+      </p>
+    </div>
+    <div class="ottr">
+      <a href="http://tpink0.com/img/work/poster20.png">
+        <img src="img/work/poster20.png" class="piece" alt="a fake travel poster for Team Fortress 2's 2fort">
+      </a>
+      <p>
+        2018. Digital
+      </p>
+    </div>
+  </body>
+  <footer class="foot">
+    <p class="foot">
+        Site last updated 11/19/21
+    </p>
+    <p class="foot">
+        tpink0.com awesome site dont forget
+    </p>
+</footer>
 </html>
