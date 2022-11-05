@@ -1,0 +1,20 @@
+.abl{
+  padding: 15px;
+  float: left;
+  width: 50%;
+}
+.abr{
+  padding: 15px;
+  float: left;
+  width: 50%;
+}
+.putl{
+  float: right;
+  display:block;
+  width: 40%;
+}
+.phol{
+  float: right;
+  display:block;
+  width: 90%;
+}
