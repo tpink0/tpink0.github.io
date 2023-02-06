@@ -1,0 +1,125 @@
+/*general stuff*/
+*{
+  color:#4D212B;
+  font-family: "Tahoma";
+  box-sizing: border-box;
+}
+::selection{
+  background-color:#74ff96;
+  color: white;
+}
+body {
+  background-color: #FFD0DC;
+  overflow-x: hidden; 
+}
+h1   {
+  color: #ff7496;
+  font-weight: bold;
+}
+h2{
+  color: #ff7496;
+}
+footer {
+  color:#4D212B;
+  width:100%;
+  clear:left;
+  bottom: 10px;
+  text-align: center;
+  font-size: 8pt;
+  padding-top: 30px;
+}
+footer.ab {
+  position: absolute;
+}
+a.link{
+  color:blue;
+}
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  text-align:center;
+}
+/*mobile vs desktop stuff*/
+.phone {display:none}
+.puter {display:block}
+.pputer{
+  margin-left:30%;
+}
+@media (max-width:700px){
+.phone {display:block}
+.puter {display:none}
+.pputer{margin-left:0}
+}
+/* silly pixelation thing */
+img.px {
+  image-rendering: optimizeSpeed;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -o-crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: pixelated;
+  image-rendering: optimize-contrast; 
+  -ms-interpolation-mode: nearest-neighbor;
+}
+/* for the banner */
+img.b{
+  width:35%;
+  padding:20px;
+  display:block;
+}
+img.pb{
+  width:75%;
+  display:block;
+  padding-bottom: 20px;
+  padding-top:20px;
+}
+/*nav menu stuff */
+nav.put{
+  position:webkit-sticky;
+  position: sticky;
+  width: 35%;
+  top: 40px;
+  padding: 10px;
+  background-color: #ff7496;
+  border: 2px #4D212B;
+  border-style:solid;
+  text-align: center;
+  overflow: hidden;
+  list-style-type: none;
+}
+.navput {
+  background-color: #ff7496;
+  border: none;
+  color: white;
+  display: inline-block;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  padding:2%;
+}
+.navput:hover {
+  background-color: white;
+  color: #ff7496;
+}
+a.b{
+  color: inherit;
+  text-decoration: none;
+}
+nav.pho{
+  position: -webkit-sticky;
+  position: sticky;
+  width: 80%;
+  padding: 10px;
+  background-color: #ff7496;
+  border: 2px #4D212B;
+  border-style:solid;
+  text-align: center;
+  list-style-type: none;
+}
+.navpho {
+  background-color: #ff7496;
+  border: 2px #4D212B;
+  color: white;
+  display: inline-block;
+  cursor: pointer;
+  padding-left:5%;
+  padding-right:5%;
+}

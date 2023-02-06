@@ -1,0 +1,20 @@
+.piece{
+  width:40%;
+  margin-top:2%;
+  position: relative;
+  display:block;
+}
+.pc{
+  margin-left:20%;
+}
+@media (max-width:700px){
+  .piece{
+    width:60%;
+    margin-right:5%;
+    position: relative;
+    display:block;
+  }
+  .pc{
+  margin-left:0;
+  }
+}
