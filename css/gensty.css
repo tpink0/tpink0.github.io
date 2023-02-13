@@ -1,7 +1,7 @@
 /*general stuff*/
 *{
   color:#4D212B;
-  font-family: "Tahoma";
+  font-family: Tahoma, Verdana;
   box-sizing: border-box;
 }
 ::selection{
@@ -31,13 +31,27 @@ footer {
 footer.ab {
   position: absolute;
 }
-a.link{
-  color:blue;
-}
 .center {
   margin-left: auto;
   margin-right: auto;
   text-align:center;
+}
+.truecenter {
+  margin: auto;
+}
+/*hyperlink shenanigans*/
+a.link{
+  color:#7496FF;
+}
+.link:visited{
+  color:#FF7496;
+}
+.link:hover {
+  color: #FF9774;
+}
+.link:active {
+  color: #FFDCD1;
+  background-color: #FF9774;
 }
 /*mobile vs desktop stuff*/
 .phone {display:none}
