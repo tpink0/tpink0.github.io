@@ -29,10 +29,10 @@ foota {
 }
 ::-webkit-scrollbar {
   display:none;
+}
 .wrap{
     display:flex;
     flex-direction: row;
-}
 }
 .frame1{
   border: 30px solid transparent;

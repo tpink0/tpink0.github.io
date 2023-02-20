@@ -59,11 +59,56 @@ a.link{
 .pputer{
   margin-left:30%;
 }
-@media (max-width:700px){
+@media (max-width:725px){
 .phone {display:block}
 .puter {display:none}
 .pputer{margin-left:0}
 }
+/* scroll bar*/
+::-webkit-scrollbar {
+  width: 17px;
+}
+::-webkit-scrollbar-track {
+  background:#E3B4C0;
+}
+::-webkit-scrollbar-thumb {
+  background-image: url(img/scroll/scrollbar.png);
+}
+::-webkit-scrollbar-thumb:hover {
+  background-image: url(img/scroll/scrollbarhover.png);
+}
+::-webkit-scrollbar-thumb:active {
+  background-image: url(img/scroll/scrollbaractive.png);
+}
+::-webkit-scrollbar-button:single-button {
+  display: block;
+  height: 17px;
+  width: 17px;
+}
+::-webkit-scrollbar-button:single-button:vertical:decrement {
+  background-image: url(img/scroll/up.png);
+}
+::-webkit-scrollbar-button:single-button:vertical:decrement:hover {
+  background-image: url(img/scroll/uphover.png);
+}
+::-webkit-scrollbar-button:single-button:vertical:decrement:active {
+  background-image: url(img/scroll/upactive.png);
+}
+::-webkit-scrollbar-button:single-button:vertical:increment {
+  background-image: url(img/scroll/down.png);
+}
+::-webkit-scrollbar-button:vertical:single-button:increment:hover {
+  background-image: url(img/scroll/downhover.png);
+}
+::-webkit-scrollbar-button:single-button:vertical:increment:active {
+  background-image: url(img/scroll/downactive.png);
+}
+/*for firefox*/
+html {
+	scrollbar-width: auto;
+	scrollbar-color: #4D212B #E3B4C0;
+}
+
 /* silly pixelation thing */
 img.px {
   image-rendering: optimizeSpeed;
