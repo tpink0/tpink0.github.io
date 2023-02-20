@@ -53,17 +53,6 @@ a.link{
   color: #FFDCD1;
   background-color: #FF9774;
 }
-/*mobile vs desktop stuff*/
-.phone {display:none}
-.puter {display:block}
-.pputer{
-  margin-left:30%;
-}
-@media (max-width:725px){
-.phone {display:block}
-.puter {display:none}
-.pputer{margin-left:0}
-}
 /* scroll bar*/
 ::-webkit-scrollbar {
   width: 17px;
@@ -103,12 +92,11 @@ a.link{
 ::-webkit-scrollbar-button:single-button:vertical:increment:active {
   background-image: url(img/scroll/downactive.png);
 }
-/*for firefox*/
+/*scrollbar for firefox*/
 html {
 	scrollbar-width: auto;
 	scrollbar-color: #4D212B #E3B4C0;
 }
-
 /* silly pixelation thing */
 img.px {
   image-rendering: optimizeSpeed;
@@ -119,9 +107,22 @@ img.px {
   image-rendering: optimize-contrast; 
   -ms-interpolation-mode: nearest-neighbor;
 }
+
+/*mobile vs desktop stuff*/
+.phone {display:none}
+.puter {display:block}
+.pputer{
+  margin-left:30%;
+}
+@media (max-width:725px){
+.phone {display:block}
+.puter {display:none}
+.pputer{margin-left:0}
+}
 /* for the banner */
 img.b{
   width:35%;
+  min-width:500px;
   padding:20px;
   display:block;
 }
@@ -136,6 +137,7 @@ nav.put{
   position:webkit-sticky;
   position: sticky;
   width: 35%;
+  min-width:525px;
   top: 40px;
   padding: 10px;
   background-color: #ff7496;
