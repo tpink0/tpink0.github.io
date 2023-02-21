@@ -69,6 +69,15 @@ a.link{
 ::-webkit-scrollbar-thumb:active {
   background-image: url(img/scroll/scrollbaractive.png);
 }
+::-webkit-scrollbar-thumb:horizontal {
+  background-image: url(img/scroll/scrollbarhor.png);
+}
+::-webkit-scrollbar-thumb:horizontal:hover {
+  background-image: url(img/scroll/scrollbarhorhover.png);
+}
+::-webkit-scrollbar-thumb:horizontal:active {
+  background-image: url(img/scroll/scrollbarhoractive.png);
+}
 ::-webkit-scrollbar-button:single-button {
   display: block;
   height: 17px;
@@ -91,6 +100,24 @@ a.link{
 }
 ::-webkit-scrollbar-button:single-button:vertical:increment:active {
   background-image: url(img/scroll/downactive.png);
+}
+::-webkit-scrollbar-button:single-button:horizontal:decrement {
+  background-image: url(img/scroll/left.png);
+}
+::-webkit-scrollbar-button:single-button:horizontal:decrement:hover {
+  background-image: url(img/scroll/lefthover.png);
+}
+::-webkit-scrollbar-button:single-button:horizontal:decrement:active {
+  background-image: url(img/scroll/leftactive.png);
+}
+::-webkit-scrollbar-button:single-button:horizontal:increment {
+  background-image: url(img/scroll/right.png);
+}
+::-webkit-scrollbar-button:single-button:horizontal:increment:hover {
+  background-image: url(img/scroll/righthover.png);
+}
+::-webkit-scrollbar-button:single-button:horizontal:increment:active {
+  background-image: url(img/scroll/rightactive.png);
 }
 /*scrollbar for firefox*/
 html {

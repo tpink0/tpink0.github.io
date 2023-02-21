@@ -1,52 +1,51 @@
-body{
-    overflow-y:hidden;
-}
-foota {
-  color:#4D212B;
-  width:100%;
-  clear:left;
-  bottom: -1px;
-  text-align: center;
-  font-size: 8pt;
-  padding-top: 30px;
-  position: absolute;
-}
-.chunk{
-    width: 650px;
-    height: 800px;
-    background-repeat: no-repeat;
-}
+/*hallway*/
 .big-wrap{
+    margin:2%;
+    margin-top: 0%;
     border:solid;
-    width:650px;
-    height: 99vw;
-    transform:rotate(-90deg) translateX(-101%);
-    transform-origin: top left;
-    overflow-y:scroll;
-    overflow-x:hidden;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-}
-::-webkit-scrollbar {
-  display:none;
+    width: 95vw;
+    height: 670px;
+    overflow-x:scroll;
+    overflow-y:hidden;
 }
 .wrap{
     display:flex;
     flex-direction: row;
 }
-.frame1{
-  border: 30px solid transparent;
-  border-image: url(frame/frame2.png) 30 round;
-  transform:rotate(90deg) translateY(-20%) translateX(50%);
-  width:550px;
-  height: 400px;
+.chunk{
+    min-width: 800px;
+    min-height: 670px;
+    background-repeat: no-repeat;
+}
+.walkguy{
+    position:absolute;
+    top:775px;
+    left:250px;
 }
 .start{
-    background-image: url("bits/start.png");
+    background-image: url(img/bits/start.png);
 }
 .middle{
-    background-image: url("bits/hall.png");
+    background-image: url(img/bits/hall.png);
 }
 .end{
-    background-image: url("bits/end.png");
+    background-image: url(img/bits/end.png);
+}
+.frame{
+    width:auto;
+    height: 350px;
+    margin-top: 100px;
+    margin-left: 250px;
+}
+.f1{
+    border: 30px solid transparent;
+    border-image: url(img/frame/frame1.png) 30 round;
+}
+.f2{
+    border: 30px solid transparent;
+    border-image: url(img/frame/frame2.png) 30 round;
+}
+.f3{
+    border: 30px solid transparent;
+    border-image: url(img/frame/frame3.png) 30 round;
 }

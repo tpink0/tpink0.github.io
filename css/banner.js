@@ -1,5 +1,5 @@
 /*it JUST works.*/
-var limiter = 27, img=document.getElementById("chImg");
+var limiter = 28, img=document.getElementById("chImg");
 function changer(){
     img.src=`img/header/p${Math.floor((Math.random()*limiter))+1}.png`;
 }
