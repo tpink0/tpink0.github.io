@@ -37,7 +37,7 @@ footer.ab {
   text-align:center;
 }
 .truecenter {
-  margin: auto;
+  margin-top: 10%;
 }
 /*hyperlink shenanigans*/
 a.link{
@@ -165,6 +165,9 @@ a.b{
   }
   .shows{
     margin-left:0%;
+  }
+  .truecenter {
+    margin-top: 25%;
   }
 }
 @media (max-width:540px){
