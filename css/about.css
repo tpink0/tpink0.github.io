@@ -8,13 +8,16 @@
   float: left;
   width: 50%;
 }
-.putl{
+.img{
   float: right;
   display:block;
   width: 40%;
+  min-width:250px;
+  margin-left:5%;
 }
-.phol{
-  float: right;
-  display:block;
-  width: 90%;
+@media (max-width:725px){
+  .img{
+    width: 90%;
+    min-width:225px;
+  }
 }
