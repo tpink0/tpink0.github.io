@@ -19,8 +19,10 @@
 }
 .walkguy{
     position:absolute;
-    top:775px;
+    bottom:18px;
     left:250px;
+    width:115px;
+    height:175px;
 }
 .start{
     background-image: url(img/bits/start.png);
