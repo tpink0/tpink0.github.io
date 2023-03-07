@@ -20,10 +20,9 @@ main{
   border: solid 2px #4D212B;
   width:70%;
   margin-top:25px;
-  padding-top:25px;
-  padding-bottom:25px;
+  margin-bottom:25px;
 }
-h1   {
+h1{
   color: #ff7496;
   font-weight: bold;
 }
@@ -31,47 +30,21 @@ h2{
   color: #ff7496;
 }
 footer {
-  color:#4D212B;
-  width:100%;
-  clear:left;
-  bottom: 10px;
+  border-top:solid 1px #4D212B;
+  clear:both;
   text-align: center;
   font-size: 8pt;
-  padding-top: 30px;
+  width:30%;
+  min-width:400px;
+  margin:auto;
+  margin-top:40px;
+  padding-bottom:10px;
+  padding-top: 10px;
 }
-footer.ab {
-  position: absolute;
-}
-
 .center {
   margin-left: auto;
   margin-right: auto;
   text-align:center;
-}
-
-/*hyperlink shenanigans*/
-a.link{
-  color:#7496FF;
-}
-.link:visited{
-  color:#FF7496;
-}
-.link:hover {
-  color: #FF9774;
-}
-.link:active {
-  color: #FFDCD1;
-  background-color: #FF9774;
-}
-
-/* silly pixelation thing */
-img.px {
-  image-rendering: optimizeSpeed;
-  image-rendering: -moz-crisp-edges;
-  image-rendering: -o-crisp-edges;
-  image-rendering: -webkit-optimize-contrast;
-  image-rendering: pixelated;
-  -ms-interpolation-mode: nearest-neighbor;
 }
 
 /* for the banner */
@@ -81,7 +54,6 @@ img.banner{
   padding-top:10px;
   padding-bottom:10px;
   display:block;
-  background-color: #FFD0DC;
 }
 /*nav menu and mobile scaling */
 nav{
@@ -97,7 +69,7 @@ nav.navmenu{
   text-align: center;
   overflow: hidden;
   list-style-type: none;
-  margin-bottom:20px;
+  margin-bottom:10px;
 }
 .navbutt {
   background-color: #ff7496;
@@ -118,10 +90,12 @@ a.b{
 }
 .shows{
   text-align:left;
-  padding-left:15%;
+  padding-left:20%;
+  padding-right:15%;
 }
 .truecenter {
   margin-top: 10%;
+  margin-bottom:10%
 }
 @media (max-width:1200px){
   main{
@@ -134,8 +108,8 @@ a.b{
 @media (max-width:725px){
   main{
     width:100vw;
-    border-left:none;
-    border-right:none;
+    border:none;
+    margin: 0px;
   }
   nav.navmenu{
     min-width:auto;
@@ -163,6 +137,31 @@ a.b{
     border: 1px solid #4D212B;
     padding: 3%;
   }
+}
+
+/*hyperlink shenanigans*/
+a.link{
+  color:#7496FF;
+}
+.link:visited{
+  color:#FF7496;
+}
+.link:hover {
+  color: #FF9774;
+}
+.link:active {
+  color: #FFDCD1;
+  background-color: #FF9774;
+}
+
+/* silly pixelation thing */
+img.px {
+  image-rendering: optimizeSpeed;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -o-crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: pixelated;
+  -ms-interpolation-mode: nearest-neighbor;
 }
 
 /* scroll bar*/
@@ -204,4 +203,16 @@ a.b{
 html {
 	scrollbar-width: auto;
 	scrollbar-color: #4D212B #E3B4C0;
+}
+/*change bullet color*/
+ul {
+  list-style: none; 
+}
+ul li::before {
+  content: "\2022";
+  color: #ff7496;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
 }

@@ -1,20 +1,28 @@
+.ck{
+  width:100%;
+  display:block;
+  float: left;
+  margin-bottom:50px;
+}
 .abl{
   padding: 15px;
   float: left;
   width: 50%;
 }
 .abr{
-  padding: 15px;
+  text-align:left;
+  padding-left: 15px;
+  padding-right: 15px;
   float: left;
   width: 50%;
 }
 .img{
   float: right;
-  display:block;
-  width: 40%;
+  width: 55%;
   min-width:250px;
   margin-left:5%;
 }
+
 @media (max-width:725px){
   .img{
     width: 90%;
