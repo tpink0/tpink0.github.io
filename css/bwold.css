@@ -1,14 +1,19 @@
 /* banner world */
+.bwt{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width:80%;
+}
 .bbox{
   display:block;
   float: left;
   padding-top: 5px;
   padding-bottom: 5px;
   border: 1px solid #4D212B;
-  width: 80%;
+  width: 100%;
   min-height:132px;
-  margin-left:10%;
-  margin-right:10%;
   margin-top:5px;
 }
 .bwn{
@@ -116,7 +121,6 @@ img.bwold{
   }
   .marge{
     display:block;
-    background-color: aqua;
     float: left;
     margin-left: 5%;
     margin-right: 5%;

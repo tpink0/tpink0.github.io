@@ -20,6 +20,7 @@
 }
 .grid{
   border-top: solid 1px #4D212B;
+  display:flex;
 }
 input[type=checkbox] {
   position: absolute;
