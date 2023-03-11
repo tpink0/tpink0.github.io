@@ -1,70 +1,116 @@
-.piece{
-  width:40%;
-  margin-top:2%;
-  position: relative;
-  display:block;
+p {
+  display: block;
+  margin-block-start: 5px;
+  margin-block-end: 5px;
 }
-.pc{
-  margin-left:20%;
-}
-@media (max-width:700px){
-  .piece{
-    width:60%;
-    margin-right:5%;
-    position: relative;
-    display:block;
-  }
-  .pc{
-  margin-left:0;
-  }
-}
+/*normal page*/
 .grid{
+  padding-top:20px;
+  margin-top:20px;
   border-top: solid 1px #4D212B;
+  width:80%;
   display:flex;
+  align-content: flex-start;
+  justify-content: space-around;
+  flex-flow: row wrap;
 }
-input[type=checkbox] {
-  position: absolute;
-  clip: rect(0 0 0 0);
+.grid>a{
+  text-decoration: none;
+  margin:10px;
+  padding:5px;
+  border: solid 1px #4D212B;
 }
+.grid>a>div>img{
+  height: 250px;
+  width: 250px;
+  object-fit: contain;
+}
+/*popups*/
 [id^=popup] {
   display: none;
-  background-color: rgba(77,33,43,0.4);
-  position: fixed;
+  position:absolute;
+  justify-content: center;
   top:0%;
   width: 100%;
-  height: 100%;
+  height: auto;
 }
-[id^=popup] .box{
+.box{
   display: block;
   background-color: #FFD0DC;
   border: solid 2px #4D212B;
-  margin-top: 75px;
-  height: auto;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  width: 50%;
+  margin-top:20px;
+  margin-bottom:20px;
+  padding: 10px;
+  min-width:900px;
+  height:auto;
+  z-index: 1;
 }
-#popup1:target {
+.box>img{
+  display:block;
+  height:80vh;
+  width: auto;
+  margin:auto;
+  text-align: center;
+}
+/*bg being clickable*/
+.bgc{
   display: block;
-  overflow-y:scroll;
-  overflow-x:hidden;
+  position: fixed;
+  top:0%;
+  left:0%;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+/*bg itself*/
+.bg{
+  position:fixed;
+  top:0%;
+  left:0%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(77,33,43,0.4);
+}
+/*X button*/
+.box>a>div{
+  height:25px;
+  width: 25px;
+  margin-left: auto;
+  margin-bottom:10px;
+  border: solid 2px #4D212B;
+  background-color: #ff7496;
+  text-align: center;
+  color: #FFD0DC;
+  
+}
+.box>a{
+  text-decoration: none;
+}
+
+/*all entries, add number for each entry*/
+#popup1:target {
+  display: flex;
 }
 #popup2:target {
-  display: block;
+  display: flex;
 }
-[id^=popup] a.x {
-  text-align: right;
+#popup3:target {
+  display: flex;
 }
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+#popup4:target {
+  display: flex;
+}
+#popup5:target {
+  display: flex;
+}
+#popup6:target {
+  display: flex;
+}
+#popup7:target {
+  display: flex;
+}
+/*idk it does something*/
+input[type=checkbox] {
+  position: absolute;
+  clip: rect(0 0 0 0);
 }
