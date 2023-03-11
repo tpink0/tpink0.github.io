@@ -5,6 +5,7 @@
   box-sizing: border-box;
 }
 body {
+  background-image: url(img/bg.png);
   background-color:#8C7076;
   overflow-x: hidden; 
   min-width: 450px;

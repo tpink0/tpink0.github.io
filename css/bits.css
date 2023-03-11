@@ -7,7 +7,13 @@ main{
 h1{
     color:#4D212B;
     margin-bottom:5px;
- }
+}
+.true{
+    display: block;
+}
+.false{
+    display: none;
+}
 @media (max-width:725px){
     main{
         min-width:0px;
@@ -17,5 +23,11 @@ h1{
         border-left:none;
         border-right:none;
         margin-top:15%;
+    }
+    .true{
+        display: none;
+    }
+    .false{
+        display: block;
     }
 }
