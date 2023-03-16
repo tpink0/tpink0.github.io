@@ -8,9 +8,10 @@ p {
   padding-top:20px;
   margin-top:20px;
   border-top: solid 1px #4D212B;
-  width:80%;
+  width:85%;
   display:flex;
   align-content: flex-start;
+  align-items: stretch;
   justify-content: space-around;
   flex-flow: row wrap;
 }
@@ -21,8 +22,10 @@ p {
   border: solid 1px #4D212B;
 }
 .grid>a>div>img{
-  height: 200px;
-  width: 200px;
+  aspect-ratio: 1 / 1;
+  max-height: 300px;
+  height:auto;
+  width: auto;
   object-fit: contain;
 }
 /*popups*/
@@ -81,10 +84,47 @@ p {
   background-color: #ff7496;
   text-align: center;
   color: #FFD0DC;
-  
 }
 .box>a{
   text-decoration: none;
+}
+
+@media (max-width:1000px){
+  .box{
+    display: block;
+    background-color: #FFD0DC;
+    border: solid 2px #4D212B;
+    margin-top:20px;
+    margin-bottom:20px;
+    padding: 10px;
+    min-width:60vw;
+    height:auto;
+    z-index: 1;
+  }
+  .box>img{
+    display:block;
+    height:80vh;
+    width: auto;
+    margin:auto;
+    text-align: center;
+  }
+  .box>a>div{
+    height:50px;
+    width: 50px;
+    margin-left: auto;
+    margin-bottom:10px;
+    border: solid 2px #4D212B;
+    background-color: #ff7496;
+    text-align: center;
+    color: #FFD0DC;
+    font-size: 4vw;
+  }
+}
+@media (max-width:725px){
+
+}
+@media (max-width:540px){
+
 }
 
 /*all entries, add number for each entry*/
