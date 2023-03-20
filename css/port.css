@@ -23,7 +23,7 @@ p {
 }
 .grid>a>div>img{
   aspect-ratio: 1 / 1;
-  max-height: 300px;
+  max-height: 15vw;
   height:auto;
   width: auto;
   object-fit: contain;
@@ -38,22 +38,106 @@ p {
   height: auto;
 }
 .box{
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   background-color: #FFD0DC;
   border: solid 2px #4D212B;
   margin-top:20px;
   margin-bottom:20px;
   padding: 10px;
-  min-width:900px;
-  height:auto;
+  max-width:70vw;
+  height:100%;
   z-index: 1;
 }
-.box>img{
-  display:block;
-  height:80vh;
-  width: auto;
-  margin:auto;
+.main{
+  display:flex;
+  justify-content: center;
+  width:fit-content;
+  height:fit-content;
+}
+.main>img{
+  max-width: 100%;
+  max-height: 90vmin;
+}
+.info{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left:10px;
+  margin-right:10px;
+
+}
+.info>img{
+  height:40%;
+  width:auto;
+}
+
+/*X button*/
+.x{
+  position:absolute;
+  height:40px;
+  width: 40px;
+  margin-left: 10px;
+  margin-top:20px;
+  border: solid 2px #4D212B;
+  background-color: #ff7496;
   text-align: center;
+  color: #FFD0DC;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.bg>a{
+  text-decoration: none;
+}
+
+@media (max-width:1200px){
+}
+
+@media (max-width:1000px){
+  .modal>a>.x{
+    height:50px;
+    width: 50px;
+    font-size: 4vw; 
+  }
+  .grid>a{
+    text-decoration: none;
+    margin:10px;
+    padding:5px;
+    border: solid 1px #4D212B;
+  }
+  .grid>a>div>img{
+    max-height: 28vw;
+  }
+}
+@media (max-width:725px){
+  .box{
+    margin-top:80px;
+    max-width:95vw;
+    align-content: none;
+  }
+  .x{
+    margin-left: -50px;
+  }
+  .main>img{
+    max-height: 80vh;
+    height:100%;
+  }
+  .grid>a>div>img{
+    max-height: 35vw;
+  }
+}
+@media (max-width:540px){
+  .grid>a>div>img{
+    max-height: 65vw;
+  }
+  .main>img{
+    max-width: 100%;
+    max-height: 100%;
+  }
 }
 /*bg being clickable*/
 .bgc{
@@ -64,6 +148,7 @@ p {
   width: 100%;
   height: 100%;
   z-index: 0;
+  cursor: default;
 }
 /*bg itself*/
 .bg{
@@ -74,59 +159,6 @@ p {
   height: 100%;
   background-color: rgba(77,33,43,0.4);
 }
-/*X button*/
-.box>a>div{
-  height:25px;
-  width: 25px;
-  margin-left: auto;
-  margin-bottom:10px;
-  border: solid 2px #4D212B;
-  background-color: #ff7496;
-  text-align: center;
-  color: #FFD0DC;
-}
-.box>a{
-  text-decoration: none;
-}
-
-@media (max-width:1000px){
-  .box{
-    display: block;
-    background-color: #FFD0DC;
-    border: solid 2px #4D212B;
-    margin-top:20px;
-    margin-bottom:20px;
-    padding: 10px;
-    min-width:60vw;
-    height:auto;
-    z-index: 1;
-  }
-  .box>img{
-    display:block;
-    height:80vh;
-    width: auto;
-    margin:auto;
-    text-align: center;
-  }
-  .box>a>div{
-    height:50px;
-    width: 50px;
-    margin-left: auto;
-    margin-bottom:10px;
-    border: solid 2px #4D212B;
-    background-color: #ff7496;
-    text-align: center;
-    color: #FFD0DC;
-    font-size: 4vw;
-  }
-}
-@media (max-width:725px){
-
-}
-@media (max-width:540px){
-
-}
-
 /*all entries, add number for each entry*/
 #popup1:target {
   display: flex;

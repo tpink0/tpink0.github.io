@@ -18,7 +18,7 @@ h1{
 @media (max-width:725px){
     main{
         min-width:0px;
-        width:100vw;
+        width:100%;
         border-top: 2px solid #4D212B;
         border-bottom: 2px solid #4D212B;
         border-left:none;
