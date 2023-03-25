@@ -37,6 +37,10 @@ h2{
 p{
   color: #4D212B;
 }
+.stuff{
+  margin-left:5px;
+  margin-right:5px;
+}
 footer {
   border-top:solid 1px #4D212B;
   clear:both;
