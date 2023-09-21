@@ -1,51 +1,20 @@
-.ck{
-  width:100%;
-  display:flex;
-  float: left;
-  margin-bottom:50px;
-}
 .abl{
-  display:block;
   padding: 15px;
   float: left;
   width: 50%;
 }
 .abr{
-  text-align:left;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 15px;
   float: left;
   width: 50%;
 }
-.img{
+.putl{
   float: right;
-  width: 55%;
-  min-width:250px;
-  margin-left:5%;
+  display:block;
+  width: 40%;
 }
-
-@media (max-width:540px){
-  .ck{
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom:10px;
-  }
-  .abl{
-    display:flex;
-    padding: 15px;
-    width: 100%;
-  }
-  .abr{
-    text-align:left;
-    padding-left: 15px;
-    padding-right: 15px;
-    width: 100%;
-  }
-  .img{
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
-  }
+.phol{
+  float: right;
+  display:block;
+  width: 90%;
 }
