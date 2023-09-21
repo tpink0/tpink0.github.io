@@ -1,20 +1,239 @@
-.piece{
-  width:40%;
-  margin-top:2%;
-  position: relative;
-  display:block;
+p {
+   display: block;
+   margin-block-start: 5px;
+   margin-block-end: 5px;
 }
-.pc{
-  margin-left:20%;
+/*normal page*/
+.grid{
+   padding-top:20px;
+   margin-top:20px;
+   border-top: solid 1px #4D212B;
+   width:85%;
+   display:flex;
+   align-content: flex-start;
+   align-items: stretch;
+   justify-content: space-around;
+   flex-flow: row wrap;
 }
-@media (max-width:700px){
-  .piece{
-    width:60%;
-    margin-right:5%;
-    position: relative;
-    display:block;
+.grid>a{
+   text-decoration: none;
+   margin:10px;
+   padding:5px;
+   border: solid 1px #4D212B;
+}
+.grid>a>div>img{
+   aspect-ratio: 1 / 1;
+   max-height: 15vw;
+   height:auto;
+   width: auto;
+   object-fit: contain;
+}
+/*popups*/
+[id^=popup] {
+   display: none;
+   position:absolute;
+   justify-content: center;
+   top:0%;
+   width: 100%;
+   height: auto;
+}
+.box{
+   display: flex;
+   flex-flow: wrap row;
+   align-items: center;
+   justify-content: center;
+   background-color: #FFD0DC;
+   border: solid 2px #4D212B;
+   margin-top:20px;
+   margin-bottom:20px;
+   padding: 10px;
+   max-width:70vw;
+   height:100%;
+   z-index: 1;
+}
+.main{
+   display:flex;
+   justify-content: center;
+}
+.main>img{
+   max-width: 100%;
+   max-height: 90vmin;
+}
+.info{
+   display:flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin-left:10px;
+   margin-right:10px;
+   max-width: 90%;
+   text-align:center;
+}
+.info img{
+   height:auto;
+   width:100%;
+}
+.sbs{
+   margin-top: 10px;
+   display:flex;
+   flex-direction: row;
+   font-weight: bold;
+}
+.sbs>div{
+   padding:5px;
+   width:50%;
+}
+/*X button*/
+.x{
+   position:absolute;
+   height:40px;
+   width: 40px;
+   margin-left: 10px;
+   margin-top:20px;
+   border: solid 2px #4D212B;
+   background-color: #ff7496;
+   text-align: center;
+   color: #FFD0DC;
+   display:flex;
+   align-items: center;
+   justify-content: center;
+   font-weight: bold;
+}
+.bg>a{
+   text-decoration: none;
+}
+@media (max-width:1200px){
+   .info{
+      flex-basis:100%;
+      max-width:100%;
+   }
+}
+@media (max-width:1000px){
+   .modal>a>.x{
+      height:50px;
+      width: 50px;
+      font-size: 4vw;
+   }
+   .sbs{
+      flex-direction: column;
+   }
+   .sbs>div{
+      padding:5px;
+      width:100%;
+   }
+   .grid>a{
+      text-decoration: none;
+      margin:10px;
+      padding:5px;
+      border: solid 1px #4D212B;
   }
-  .pc{
-  margin-left:0;
+   .grid>a>div>img{
+      max-height: 28vw;
   }
+}
+@media (max-width:725px){
+   .box{
+       margin-top:80px;
+       max-width:95vw;
+       align-content: none;
+  }
+   .x{
+       margin-left: -50px;
+  }
+   .main>img{
+       max-height: 80vh;
+       height:100%;
+  }
+   .grid>a>div>img{
+       max-height: 35vw;
+  }
+}
+@media (max-width:540px){
+   .grid>a>div>img{
+       max-height: 65vw;
+  }
+   .main>img{
+       max-width: 100%;
+       max-height: 100%;
+  }
+}
+/*bg being clickable*/
+.bgc{
+   display: block;
+   position: fixed;
+   top:0%;
+   left:0%;
+   width: 100%;
+   height: 100%;
+   z-index: 0;
+   cursor: default;
+}
+/*bg itself*/
+.bg{
+   position:fixed;
+   top:0%;
+   left:0%;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(77,33,43,0.4);
+}
+/*all entries, add number for each entry*/
+#popup1:target {
+   display: flex;
+}
+#popup2:target {
+   display: flex;
+}
+#popup3:target {
+   display: flex;
+}
+#popup4:target {
+   display: flex;
+}
+#popup5:target {
+   display: flex;
+}
+#popup6:target {
+   display: flex;
+}
+#popup7:target {
+   display: flex;
+}
+#popup8:target {
+   display: flex;
+}
+#popup9:target {
+   display: flex;
+}
+#popup10:target {
+   display: flex;
+}
+#popup11:target {
+   display: flex;
+}
+/*extra stuff just for the fishies one*/
+.fsh{
+   background-color: #FBFAE7;
+   border: 30px solid #4A6885;
+   border-image: url(img/frame/fish.png) 30 round;
+}
+.fsh h1{
+   color:#D29584;
+}
+.fsh p{
+   color:#4A6885;
+}
+.fsh .sbs p{
+   color:#D29584;
+}
+.fshx{
+   border: solid 5px #4A6885;
+   border-image: url(img/frame/fishx.png) 5 round;
+   background-color: #FBFAE7;
+   color: #D29584;
+}
+/*idk it does something*/
+input[type=checkbox] {
+   position: absolute;
+   clip: rect(0 0 0 0);
 }

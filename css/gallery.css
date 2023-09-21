@@ -1,0 +1,53 @@
+/*hallway*/
+.big-wrap{
+    margin:2%;
+    margin-top: 0%;
+    border:solid;
+    width: 95vw;
+    height: 670px;
+    overflow-x:scroll;
+    overflow-y:hidden;
+}
+.wrap{
+    display:flex;
+    flex-direction: row;
+}
+.chunk{
+    min-width: 800px;
+    min-height: 670px;
+    background-repeat: no-repeat;
+}
+.walkguy{
+    position:absolute;
+    bottom:18px;
+    left:250px;
+    width:115px;
+    height:175px;
+}
+.start{
+    background-image: url(img/bits/start.png);
+}
+.middle{
+    background-image: url(img/bits/hall.png);
+}
+.end{
+    background-image: url(img/bits/end.png);
+}
+.frame{
+    width:auto;
+    height: 350px;
+    margin-top: 100px;
+    margin-left: 250px;
+}
+.f1{
+    border: 30px solid transparent;
+    border-image: url(img/frame/frame1.png) 30 round;
+}
+.f2{
+    border: 30px solid transparent;
+    border-image: url(img/frame/frame2.png) 30 round;
+}
+.f3{
+    border: 30px solid transparent;
+    border-image: url(img/frame/frame3.png) 30 round;
+}
