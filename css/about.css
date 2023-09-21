@@ -1,20 +1,51 @@
+.ck{
+  width:100%;
+  display:flex;
+  float: left;
+  margin-bottom:50px;
+}
 .abl{
+  display:block;
   padding: 15px;
   float: left;
   width: 50%;
 }
 .abr{
-  padding: 15px;
+  text-align:left;
+  padding-left: 15px;
+  padding-right: 15px;
   float: left;
   width: 50%;
 }
-.putl{
+.img{
   float: right;
-  display:block;
-  width: 40%;
+  width: 55%;
+  min-width:250px;
+  margin-left:5%;
 }
-.phol{
-  float: right;
-  display:block;
-  width: 90%;
+
+@media (max-width:540px){
+  .ck{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:10px;
+  }
+  .abl{
+    display:flex;
+    padding: 15px;
+    width: 100%;
+  }
+  .abr{
+    text-align:left;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+  }
+  .img{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+  }
 }

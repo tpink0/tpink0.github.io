@@ -1,0 +1,40 @@
+main{
+   background-color: #FFD0DC;
+   border: solid 2px #4D212B;
+   width:70%;
+   margin-top:25px;
+   margin-bottom:25px;
+   margin-left:auto;
+   margin-right:auto;
+   display:flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+main > div {
+   background-color: #f1f1f1;
+   width: 100px;
+   margin: 10px;
+   text-align: center;
+   font-size: 30px;
+}
+main > div.weener {
+   background-color: brown;
+   width: 400px;
+   height:200px;
+   margin: 10px;
+}
+div{
+   background-color: aqua;
+}
+footer {
+   border-top:solid 1px #4D212B;
+   clear:both;
+   text-align: center;
+   font-size: 8pt;
+   width:30%;
+   min-width:400px;
+   margin-top:40px;
+   padding-bottom:10px;
+   padding-top: 10px;
+}

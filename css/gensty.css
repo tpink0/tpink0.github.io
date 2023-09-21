@@ -4,94 +4,84 @@
   font-family: Tahoma, Verdana;
   box-sizing: border-box;
 }
-::selection{
-  background-color:#74ff96;
-  color: white;
-}
 body {
-  background-color: #FFD0DC;
+  background-image: url(img/bg.png);
+  background-color:#8C7076;
   overflow-x: hidden; 
+  width:100%;
+  height:100%;
+  padding:0;
+  margin:0;
 }
-h1   {
+main{
+  background-color: #FFD0DC;
+  border: solid 2px #4D212B;
+  width:70%;
+  margin-top:25px;
+  margin-bottom:25px;
+  margin-left:auto;
+  margin-right:auto;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+h1{
   color: #ff7496;
   font-weight: bold;
 }
 h2{
   color: #ff7496;
 }
+p{
+  color: #4D212B;
+}
+.stuff{
+  margin-left:5px;
+  margin-right:5px;
+}
 footer {
-  color:#4D212B;
-  width:100%;
-  clear:left;
-  bottom: 10px;
+  border-top:solid 1px #4D212B;
+  clear:both;
   text-align: center;
   font-size: 8pt;
-  padding-top: 30px;
-}
-footer.ab {
-  position: absolute;
-}
-.center {
-  margin-left: auto;
-  margin-right: auto;
-  text-align:center;
-}
-.truecenter {
-  margin: auto;
-}
-/*hyperlink shenanigans*/
-a.link{
-  color:#7496FF;
-}
-.link:visited{
-  color:#FF7496;
-}
-.link:hover {
-  color: #FF9774;
-}
-.link:active {
-  color: #FFDCD1;
-  background-color: #FF9774;
-}
-/*mobile vs desktop stuff*/
-.phone {display:none}
-.puter {display:block}
-.pputer{
-  margin-left:30%;
-}
-@media (max-width:700px){
-.phone {display:block}
-.puter {display:none}
-.pputer{margin-left:0}
-}
-/* silly pixelation thing */
-img.px {
-  image-rendering: optimizeSpeed;
-  image-rendering: -moz-crisp-edges;
-  image-rendering: -o-crisp-edges;
-  image-rendering: -webkit-optimize-contrast;
-  image-rendering: pixelated;
-  image-rendering: optimize-contrast; 
-  -ms-interpolation-mode: nearest-neighbor;
+  width:30%;
+  min-width:400px;
+  margin:auto;
+  margin-top:40px;
+  padding-bottom:10px;
+  padding-top: 10px;
+  align-self: flex-end;
 }
 /* for the banner */
-img.b{
-  width:35%;
-  padding:20px;
-  display:block;
+img.banner{
+  width:100%;
+  padding-top:15px;
+  padding-bottom:15px;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-img.pb{
-  width:75%;
-  display:block;
-  padding-bottom: 20px;
-  padding-top:20px;
+nav>a{
+  height:100%;
+  width:100%;
+  object-fit: cover;
 }
-/*nav menu stuff */
-nav.put{
-  position:webkit-sticky;
-  position: sticky;
-  width: 35%;
+/*nav menu and mobile scaling */
+nav{
+  width:50%;
   top: 40px;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+nav.navmenu{
+  display:block;
+  width: 50%;
+  min-width:525px;
   padding: 10px;
   background-color: #ff7496;
   border: 2px #4D212B;
@@ -99,8 +89,9 @@ nav.put{
   text-align: center;
   overflow: hidden;
   list-style-type: none;
+  margin-bottom:10px;
 }
-.navput {
+.navbutt {
   background-color: #ff7496;
   border: none;
   color: white;
@@ -109,7 +100,7 @@ nav.put{
   cursor: pointer;
   padding:2%;
 }
-.navput:hover {
+.navbutt:hover {
   background-color: white;
   color: #ff7496;
 }
@@ -117,23 +108,143 @@ a.b{
   color: inherit;
   text-decoration: none;
 }
-nav.pho{
-  position: -webkit-sticky;
-  position: sticky;
-  width: 80%;
-  padding: 10px;
-  background-color: #ff7496;
-  border: 2px #4D212B;
-  border-style:solid;
-  text-align: center;
-  list-style-type: none;
+.shows{
+  text-align:left;
+  padding-left: 15px;
+  padding-right: 15px;
+  flex-direction: column-reverse;
+  display:flex;
 }
-.navpho {
-  background-color: #ff7496;
-  border: 2px #4D212B;
+@media (max-width:1200px){
+  main{
+    width:80%;
+  }
+  nav{
+    width:70%;
+  }
+  
+}
+@media (max-width:725px){
+  main{
+    width:100%;
+    border:none;
+    border-bottom: 2px solid #4D212B;
+    margin: 0px;
+  }
+  nav{
+    width:100%;
+  }
+  nav.navmenu{
+    min-width:auto;
+    width:100%;
+    padding: 5px;
+    border-left:none;
+    border-right:none;
+  }
+  .navbutt {
+    border: 1px solid #4D212B;
+    padding: 4%;
+  }
+  .truecenter {
+    margin-top: 25%;
+  }
+}
+@media (max-width:540px){
+  .navbutt {
+    border: 1px solid #4D212B;
+    padding: 1.15rem;
+  }
+  nav.navmenu{
+    display:block;
+    min-width:300px;
+    background-color: #ff7496;
+    text-align: center;
+    overflow: hidden;
+    list-style-type: none;
+  }
+  footer {
+    width:30%;
+    min-width:300px;
+  }
+}
+/*hyperlink shenanigans*/
+a.link{
+  color:#7496FF;
+}
+.link:visited{
+  color:#9674FF;
+}
+.link:hover {
+  color: #FF9774;
+}
+.link:active {
+  color: #FFDCD1;
+  background-color: #FF9774;
+}
+/*highlight box*/
+::selection{
+  background-color:#74ff96;
   color: white;
-  display: inline-block;
-  cursor: pointer;
-  padding-left:5%;
-  padding-right:5%;
+}
+/*change bullet color*/
+ul {
+  list-style: none; 
+}
+ul li::before {
+  content: "\2022";
+  color: #ff7496;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+}
+/* silly pixelation thing */
+img.px {
+  image-rendering: optimizeSpeed;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -o-crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: pixelated;
+  -ms-interpolation-mode: nearest-neighbor;
+}
+
+/* scroll bar*/
+::-webkit-scrollbar {
+  width: 17px;
+}
+::-webkit-scrollbar-track {
+  background:#E3B4C0;
+}
+::-webkit-scrollbar-button:single-button {
+  display: block;
+  height: 17px;
+  width: 17px;
+}
+::-webkit-scrollbar-thumb {background-image: url(img/scroll/scrollbar.png);}
+::-webkit-scrollbar-thumb:hover {background-image: url(img/scroll/scrollbarhover.png);}
+::-webkit-scrollbar-thumb:active {background-image: url(img/scroll/scrollbaractive.png);}
+
+::-webkit-scrollbar-thumb:horizontal {background-image: url(img/scroll/scrollbarhor.png);}
+::-webkit-scrollbar-thumb:horizontal:hover {background-image: url(img/scroll/scrollbarhorhover.png);}
+::-webkit-scrollbar-thumb:horizontal:active {background-image: url(img/scroll/scrollbarhoractive.png);}
+
+::-webkit-scrollbar-button:single-button:vertical:decrement {background-image: url(img/scroll/up.png);}
+::-webkit-scrollbar-button:single-button:vertical:decrement:hover {background-image: url(img/scroll/uphover.png);}
+::-webkit-scrollbar-button:single-button:vertical:decrement:active {background-image: url(img/scroll/upactive.png);}
+::-webkit-scrollbar-button:single-button:vertical:increment {background-image: url(img/scroll/down.png);}
+::-webkit-scrollbar-button:single-button:vertical:increment:hover {background-image: url(img/scroll/downhover.png);}
+::-webkit-scrollbar-button:single-button:vertical:increment:active {background-image: url(img/scroll/downactive.png);}
+
+::-webkit-scrollbar-button:single-button:horizontal:decrement {background-image: url(img/scroll/left.png);}
+::-webkit-scrollbar-button:single-button:horizontal:decrement:hover {background-image: url(img/scroll/lefthover.png);}
+::-webkit-scrollbar-button:single-button:horizontal:decrement:active {background-image: url(img/scroll/leftactive.png);}
+
+::-webkit-scrollbar-button:single-button:horizontal:increment {background-image: url(img/scroll/right.png);}
+::-webkit-scrollbar-button:single-button:horizontal:increment:hover {background-image: url(img/scroll/righthover.png);}
+::-webkit-scrollbar-button:single-button:horizontal:increment:active {background-image: url(img/scroll/rightactive.png);}
+
+/*scrollbar for firefox*/
+html {
+	scrollbar-width: auto;
+	scrollbar-color: #4D212B #E3B4C0;
 }
