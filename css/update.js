@@ -1,1 +1,1 @@
-document.getElementById("updt").innerHTML = "Site last updated 9/30/24";
+document.getElementById("updt").innerHTML = "Site last updated 1/23/25";
