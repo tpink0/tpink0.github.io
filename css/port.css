@@ -211,6 +211,12 @@ p {
 #popup11:target {
    display: flex;
 }
+#popup12:target {
+   display: flex;
+}
+#popup13:target {
+   display: flex;
+}
 /*extra stuff just for the fishies one*/
 .fsh{
    background-color: #FBFAE7;
