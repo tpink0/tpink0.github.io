@@ -177,7 +177,7 @@ p {
    height: 100%;
    background-color: rgba(77,33,43,0.4);
 }
-/*all entries, add number for each entry*/
+/*all entries, add number for each entry surely theres a better way it works for now eff off*/
 #popup1:target {
    display: flex;
 }
@@ -217,6 +217,15 @@ p {
 #popup13:target {
    display: flex;
 }
+#popup14:target {
+   display: flex;
+}
+#popup15:target {
+   display: flex;
+}
+#popup16:target {
+   display: flex;
+}
 /*extra stuff just for the fishies one*/
 .fsh{
    background-color: #FBFAE7;
@@ -238,7 +247,7 @@ p {
    background-color: #FBFAE7;
    color: #D29584;
 }
-/*idk it does something*/
+/*idk it does something lol*/
 input[type=checkbox] {
    position: absolute;
    clip: rect(0 0 0 0);
