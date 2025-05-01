@@ -175,7 +175,7 @@ p {
    left:0%;
    width: 100%;
    height: 100%;
-   background-color: rgba(77,33,43,0.4);
+   background-color: rgba(77,33,43,0.7);
 }
 /*all entries, add number for each entry surely theres a better way it works for now eff off*/
 #popup1:target {
@@ -247,17 +247,17 @@ p {
    background-color: #FBFAE7;
    color: #D29584;
 }
-/*extra stuff just for the splicenet one*/
+/*extra stuff just for the splicenet one bc ppl be bitchin!!!!!*/
 .sn{
    background-color: #F4F4F5;
-   border: 30px solid #4CC3CD;
-   border-image: url(img/frame/sn.png) 30 round;
+   border: 2px solid #4CC3CD;
 }
 .sn h1{
    color:#5ABC5F;
 }
 .sn h2{
    color:#4CC3CD;
+   padding-top:20%;
 }
 .sn p{
    color:#353635;
@@ -265,11 +265,16 @@ p {
 .sn .sbs p{
    color:#5ABC5F;
 }
+.sn .main{
+   padding:10%;
+}
 .snx{
-   border: solid 5px #4A6885;
-   border-image: url(img/frame/fishx.png) 5 round;
+   border: solid 2px #4CC3CD;
    background-color: #F4F4F5;
-   color: #4CC3CD;
+   color: #5ABC5F;
+}
+.snbg{
+   background-color: rgba(200,241,208,0.9);
 }
 /*idk it does something lol*/
 input[type=checkbox] {
