@@ -177,7 +177,7 @@ p {
    height: 100%;
    background-color: rgba(77,33,43,0.4);
 }
-/*all entries, add number for each entry*/
+/*all entries, add number for each entry surely theres a better way it works for now eff off*/
 #popup1:target {
    display: flex;
 }
@@ -211,6 +211,21 @@ p {
 #popup11:target {
    display: flex;
 }
+#popup12:target {
+   display: flex;
+}
+#popup13:target {
+   display: flex;
+}
+#popup14:target {
+   display: flex;
+}
+#popup15:target {
+   display: flex;
+}
+#popup16:target {
+   display: flex;
+}
 /*extra stuff just for the fishies one*/
 .fsh{
    background-color: #FBFAE7;
@@ -232,7 +247,31 @@ p {
    background-color: #FBFAE7;
    color: #D29584;
 }
-/*idk it does something*/
+/*extra stuff just for the splicenet one*/
+.sn{
+   background-color: #F4F4F5;
+   border: 30px solid #4CC3CD;
+   border-image: url(img/frame/sn.png) 30 round;
+}
+.sn h1{
+   color:#5ABC5F;
+}
+.sn h2{
+   color:#4CC3CD;
+}
+.sn p{
+   color:#353635;
+}
+.sn .sbs p{
+   color:#5ABC5F;
+}
+.snx{
+   border: solid 5px #4A6885;
+   border-image: url(img/frame/fishx.png) 5 round;
+   background-color: #F4F4F5;
+   color: #4CC3CD;
+}
+/*idk it does something lol*/
 input[type=checkbox] {
    position: absolute;
    clip: rect(0 0 0 0);
