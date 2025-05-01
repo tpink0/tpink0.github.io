@@ -247,6 +247,30 @@ p {
    background-color: #FBFAE7;
    color: #D29584;
 }
+/*extra stuff just for the splicenet one*/
+.sn{
+   background-color: #F4F4F5;
+   border: 30px solid #4CC3CD;
+   border-image: url(img/frame/sn.png) 30 round;
+}
+.sn h1{
+   color:#5ABC5F;
+}
+.sn h2{
+   color:#4CC3CD;
+}
+.sn p{
+   color:#353635;
+}
+.sn .sbs p{
+   color:#5ABC5F;
+}
+.snx{
+   border: solid 5px #4A6885;
+   border-image: url(img/frame/fishx.png) 5 round;
+   background-color: #F4F4F5;
+   color: #4CC3CD;
+}
 /*idk it does something lol*/
 input[type=checkbox] {
    position: absolute;
