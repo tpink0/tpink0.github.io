@@ -217,15 +217,6 @@ p {
 #popup13:target {
    display: flex;
 }
-#popup14:target {
-   display: flex;
-}
-#popup15:target {
-   display: flex;
-}
-#popup16:target {
-   display: flex;
-}
 /*extra stuff just for the fishies one*/
 .fsh{
    background-color: #FBFAE7;
@@ -246,57 +237,6 @@ p {
    border-image: url(img/frame/fishx.png) 5 round;
    background-color: #FBFAE7;
    color: #D29584;
-}
-/*extra stuff just for the splicenet one bc ppl be bitchin!!!!!*/
-.sn{
-   background-color: #F4F4F5;
-   border: 2px solid #4CC3CD;
-}
-.sn h1{
-   color:#5ABC5F;
-}
-.sn h2{
-   color:#4CC3CD;
-   padding-top:20%;
-}
-.sn p{
-   color:#353635;
-}
-.sn .sbs p{
-   color:#5ABC5F;
-}
-.sn .main{
-   padding:10%;
-}
-.snx{
-   border: solid 2px #4CC3CD;
-   background-color: #F4F4F5;
-   color: #5ABC5F;
-}
-.snbg{
-   background-color: rgba(200,241,208,0.9);
-}
-/*hololand*/
-.holo{
-   background-color: #f4f4f5;
-   border: 2px solid #231F20;
-}
-.holo h1{
-   color:#231F20;
-}
-.holo h2{
-   color:#231F20;
-}
-.holo p{
-   color:#231F20;
-}
-.holox{
-   border: solid 2px #231F20;
-   background-color: #F4F4F5;
-   color: #231f20;
-}
-.holobg{
-   background-color: rgba(244,244,245,0.8);
 }
 /*idk it does something lol*/
 input[type=checkbox] {
