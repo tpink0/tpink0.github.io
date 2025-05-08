@@ -276,6 +276,28 @@ p {
 .snbg{
    background-color: rgba(200,241,208,0.9);
 }
+/*hololand*/
+.holo{
+   background-color: #f4f4f5;
+   border: 2px solid #231F20;
+}
+.holo h1{
+   color:#231F20;
+}
+.holo h2{
+   color:#231F20;
+}
+.holo p{
+   color:#231F20;
+}
+.holox{
+   border: solid 2px #231F20;
+   background-color: #F4F4F5;
+   color: #231f20;
+}
+.holobg{
+   background-color: rgba(244,244,245,0.8);
+}
 /*idk it does something lol*/
 input[type=checkbox] {
    position: absolute;
